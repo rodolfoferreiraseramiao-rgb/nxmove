@@ -1,66 +1,259 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>NexMove Express</title>
+
 <style>
-body{margin:0;font-family:Arial;background:#0b1f36;color:white;}
-header{display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#071425;}
-.logo{font-size:24px;font-weight:bold;color:#00ff9d;}
-.hero{padding:120px 40px;text-align:center;background:linear-gradient(120deg,#071425,#0b1f36);}
-.hero h1{font-size:48px;margin-bottom:20px;}
-.hero p{font-size:20px;max-width:600px;margin:auto;}
-.btn{margin-top:30px;display:inline-block;background:#00ff9d;color:black;padding:15px 30px;border-radius:8px;text-decoration:none;font-weight:bold;}
-.services{padding:80px 40px;background:#0f2b4c;text-align:center;}
-.services h2{font-size:36px;margin-bottom:50px;}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;}
-.card{background:#0b1f36;padding:30px;border-radius:10px;}
-.contact{padding:80px 40px;text-align:center;}
-.qr{width:180px;margin-top:20px;}
-footer{padding:20px;text-align:center;background:#071425;}
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b1f36;
+color:white;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#071425;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+height:50px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.whatsapp{
+background:#00ff9d;
+color:black;
+padding:10px 18px;
+border-radius:6px;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+padding:120px 40px;
+text-align:center;
+background:linear-gradient(120deg,#071425,#0b1f36);
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:600px;
+margin:auto;
+}
+
+.btn{
+margin-top:30px;
+display:inline-block;
+background:#00ff9d;
+color:black;
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* SERVICES */
+
+.services{
+padding:80px 40px;
+background:#0f2b4c;
+text-align:center;
+}
+
+.services h2{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.card{
+background:#0b1f36;
+padding:30px;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 40px;
+text-align:center;
+}
+
+.qr{
+width:200px;
+margin-top:20px;
+}
+
+/* FOOTER */
+
+footer{
+padding:20px;
+text-align:center;
+background:#071425;
+}
+
 </style>
+
 </head>
+
 <body>
 
 <header>
-<div class="logo">NexMove Express</div>
+
+<div class="logo-area">
+
+<img src="logo.png">
+
+<strong>NexMove Express</strong>
+
+</div>
+
+<nav>
+
+<a href="#">Serviços</a>
+<a href="#">Tecnologia</a>
+<a href="#contato">Contato</a>
+
+<a class="whatsapp" href="https://wa.me/5511999999999" target="_blank">
+
+Fale no WhatsApp
+
+</a>
+
+</nav>
+
 </header>
 
 <section class="hero">
+
 <h1>Entregas Expressas para E-commerce</h1>
-<p>Logística inteligente para empresas que vendem online em São Paulo.</p>
-<a class="btn" href="#contato">Solicitar Cotação</a>
+
+<p>
+
+Logística inteligente para empresas que vendem online em São Paulo.
+
+</p>
+
+<a class="btn" href="#contato">
+
+Solicitar Cotação
+
+</a>
+
 </section>
 
 <section class="services">
+
 <h2>Nossos Serviços</h2>
+
 <div class="grid">
-<div class="card"><h3>Same Day</h3><p>Entrega no mesmo dia.</p></div>
-<div class="card"><h3>Next Day</h3><p>Entrega no dia seguinte.</p></div>
-<div class="card"><h3>Last Mile</h3><p>Entrega final para e-commerce.</p></div>
-<div class="card"><h3>Logística Reversa</h3><p>Coleta de devoluções.</p></div>
+
+<div class="card">
+
+<h3>Same Day</h3>
+
+<p>Entrega no mesmo dia.</p>
+
 </div>
+
+<div class="card">
+
+<h3>Next Day</h3>
+
+<p>Entrega no dia seguinte.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Last Mile</h3>
+
+<p>Entrega final para e-commerce.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Logística Reversa</h3>
+
+<p>Coleta de devoluções.</p>
+
+</div>
+
+</div>
+
 </section>
 
 <section id="contato" class="contact">
+
 <h2>Contato</h2>
+
 <div class="grid">
+
 <div>
+
 <h3>Sidnaldo Corte</h3>
+
 <p>Operações e Coletas</p>
+
 <img src="qr_sidnaldo.png" class="qr">
+
 </div>
+
 <div>
+
 <h3>Rodolfo</h3>
+
 <p>Novos Clientes e Parcerias</p>
+
 <img src="qr_rodolfo.png" class="qr">
+
 </div>
+
 </div>
+
 </section>
 
 <footer>
+
 © NexMove Express
+
 </footer>
 
 </body>
