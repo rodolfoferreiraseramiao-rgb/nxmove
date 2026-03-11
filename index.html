@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
-
 <head>
 
 <meta charset="UTF-8">
@@ -48,7 +47,6 @@ color:white;
 text-decoration:none;
 margin-left:30px;
 font-weight:bold;
-font-size:16px;
 }
 
 nav a:hover{
@@ -65,7 +63,6 @@ background:linear-gradient(120deg,#071425,#0b1f36);
 
 .hero h1{
 font-size:54px;
-margin-bottom:20px;
 }
 
 .hero p{
@@ -75,7 +72,7 @@ margin:auto;
 }
 
 .btn{
-margin-top:40px;
+margin-top:35px;
 display:inline-block;
 background:#00ff9d;
 color:black;
@@ -83,30 +80,14 @@ padding:18px 36px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
-font-size:18px;
 }
 
-.btn:hover{
-background:#00d482;
-}
-
-/* SERVICES */
-
-.services{
-padding:100px 30px;
-background:#0f2b4c;
-text-align:center;
-}
-
-.services h2{
-font-size:38px;
-margin-bottom:50px;
-}
+/* GRID */
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:35px;
+gap:30px;
 max-width:1100px;
 margin:auto;
 }
@@ -117,17 +98,26 @@ padding:35px;
 border-radius:10px;
 }
 
-/* SIMULADOR */
+/* SECTIONS */
 
-.simulador{
+.section{
 padding:100px 30px;
 text-align:center;
 }
 
-.simulador h2{
-font-size:36px;
-margin-bottom:40px;
+.section-dark{
+background:#0f2b4c;
 }
+
+/* MAPA */
+
+.map{
+max-width:600px;
+margin:auto;
+margin-top:30px;
+}
+
+/* FORM */
 
 .form{
 max-width:500px;
@@ -147,27 +137,12 @@ button{
 background:#00ff9d;
 border:none;
 padding:16px;
-font-weight:bold;
 border-radius:6px;
+font-weight:bold;
 cursor:pointer;
 }
 
-button:hover{
-background:#00d482;
-}
-
-.resultado{
-margin-top:30px;
-font-size:22px;
-}
-
-/* CONTACT */
-
-.contact{
-padding:100px 30px;
-background:#0f2b4c;
-text-align:center;
-}
+/* QR */
 
 .qr{
 width:200px;
@@ -177,15 +152,14 @@ margin-top:20px;
 /* FOOTER */
 
 footer{
-padding:25px;
-text-align:center;
+padding:40px;
 background:#071425;
+text-align:center;
 }
 
 /* WHATSAPP FLOAT */
 
 .whatsapp-float{
-
 position:fixed;
 bottom:25px;
 right:25px;
@@ -195,12 +169,6 @@ font-size:28px;
 padding:18px 20px;
 border-radius:50%;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.4);
-
-}
-
-.whatsapp-float:hover{
-background:#1ebe5d;
 }
 
 </style>
@@ -212,17 +180,15 @@ background:#1ebe5d;
 <header>
 
 <div class="logo">
-
 <img src="logo.png (2).png">
-
 <span>NexMove Express</span>
-
 </div>
 
 <nav>
-
-<a href="#servicos">Serviços</a> <a href="#simulador">Simular Frete</a> <a href="#contato">Contato</a>
-
+<a href="#servicos">Serviços</a>
+<a href="#rastreamento">Rastreamento</a>
+<a href="#mapa">Cobertura</a>
+<a href="#contato">Contato</a>
 </nav>
 
 </header>
@@ -232,81 +198,146 @@ background:#1ebe5d;
 <h1>Logística Inteligente para E-commerce</h1>
 
 <p>
-
-Entregas rápidas em São Paulo com tecnologia e eficiência
-para operações de e-commerce.
-
+Entregas rápidas em São Paulo com tecnologia e eficiência para operações logísticas.
 </p>
 
-<a class="btn"
-href="https://wa.me/5511966925534"
-target="_blank">
-
-Solicitar Cotação no WhatsApp
-
+<a class="btn" href="https://wa.me/5511966925534" target="_blank">
+Solicitar Cotação
 </a>
 
 </section>
 
-<section id="servicos" class="services">
+<!-- SERVIÇOS -->
 
-<h2>Nossos Serviços</h2>
+<section id="servicos" class="section section-dark">
+
+<h2>Tipos de Operação</h2>
 
 <div class="grid">
 
 <div class="card">
-
-<h3>Same Day</h3>
-
-<p>Entregas no mesmo dia para operações urgentes.</p>
-
+<h3>Aéreo</h3>
+<p>Transporte aéreo para operações urgentes.</p>
 </div>
 
 <div class="card">
-
-<h3>Next Day</h3>
-
-<p>Entrega no dia seguinte com alto nível de SLA.</p>
-
+<h3>Rodoviário</h3>
+<p>Distribuição rodoviária eficiente.</p>
 </div>
 
 <div class="card">
+<h3>Dedicado Spot</h3>
+<p>Operação dedicada para demandas específicas.</p>
+</div>
 
-<h3>Last Mile</h3>
+<div class="card">
+<h3>Super Expresso</h3>
+<p>Same-Day e Next-Day para operações urgentes.</p>
+</div>
 
-<p>Distribuição final para e-commerce.</p>
-
+<div class="card">
+<h3>Standard</h3>
+<p>Distribuição regular com eficiência logística.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="simulador" class="simulador">
+<!-- SIMULADOR -->
+
+<section class="section">
 
 <h2>Simular Frete</h2>
 
 <div class="form">
 
 <input id="origem" placeholder="CEP Origem">
-
 <input id="destino" placeholder="CEP Destino">
-
 <input id="peso" placeholder="Peso (kg)">
 
-<button onclick="calcularFrete()">
-
-Calcular Frete
-
-</button>
+<button onclick="calcularFrete()">Calcular Frete</button>
 
 </div>
 
-<div class="resultado" id="resultado"></div>
+<div id="resultado"></div>
 
 </section>
 
-<section id="contato" class="contact">
+<!-- RASTREAMENTO -->
+
+<section id="rastreamento" class="section section-dark">
+
+<h2>Rastreamento de Pedido</h2>
+
+<div class="form">
+
+<input placeholder="Digite o código de rastreio">
+
+<button>Rastrear Pedido</button>
+
+</div>
+
+<p style="margin-top:20px;">
+*Integração com sistema de tracking em implantação.
+</p>
+
+</section>
+
+<!-- MAPA BRASIL -->
+
+<section id="mapa" class="section">
+
+<h2>Área de Cobertura</h2>
+
+<p>
+Atendimento focado em <b>São Paulo Capital</b>
+</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Brazil_location_map.svg"
+class="map">
+
+<p style="margin-top:20px;">
+Região destacada: São Paulo
+</p>
+
+</section>
+
+<!-- MAPA ENTREGAS -->
+
+<section class="section section-dark">
+
+<h2>Mapa de Entregas</h2>
+
+<p>
+Operação de entregas concentrada em São Paulo Capital,
+com expansão planejada para Grande São Paulo.
+</p>
+
+</section>
+
+<!-- CAPTAR ECOMMERCE -->
+
+<section class="section">
+
+<h2>Soluções para E-commerce</h2>
+
+<p style="max-width:700px;margin:auto;">
+
+Integramos tecnologia e logística para atender lojas virtuais,
+marketplaces e operações omnichannel.
+
+</p>
+
+<a class="btn" href="https://wa.me/5511966925534" target="_blank">
+Quero integrar minha loja
+</a>
+
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato" class="section section-dark">
 
 <h2>Contato Comercial</h2>
 
@@ -315,9 +346,7 @@ Calcular Frete
 <div>
 
 <h3>Sidnaldo Corte</h3>
-
 <p>Operações e Coletas</p>
-
 <img src="qr_sid.png" class="qr">
 
 </div>
@@ -325,9 +354,7 @@ Calcular Frete
 <div>
 
 <h3>Rodolfo</h3>
-
-<p>Novos Clientes e Parcerias</p>
-
+<p>Novos Clientes</p>
 <img src="qr_rodolfo.png" class="qr">
 
 </div>
@@ -338,38 +365,33 @@ Calcular Frete
 
 <footer>
 
-© NexMove Express
+<p>© NexMove Express</p>
+
+<p>
+Base Matriz<br>
+Carapicuíba / SP
+</p>
 
 </footer>
 
 <a class="whatsapp-float"
 href="https://wa.me/5511966925534"
-target="_blank">
-
-💬
-
-</a>
+target="_blank">💬</a>
 
 <script>
 
 function calcularFrete(){
 
-let peso = document.getElementById("peso").value;
+let peso=document.getElementById("peso").value;
 
-let base = 12;
+let valor=12+(peso*2)+5;
 
-let valor = base + (peso * 2) + 5;
-
-let prazo = "1 a 2 dias";
-
-document.getElementById("resultado").innerHTML =
-
-"Frete estimado: <b>R$ "+valor+"</b><br>Prazo: "+prazo;
+document.getElementById("resultado").innerHTML=
+"Frete estimado: R$ "+valor+" | Prazo: 1-2 dias";
 
 }
 
 </script>
 
 </body>
-
 </html>
