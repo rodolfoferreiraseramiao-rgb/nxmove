@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NexMove Express | Logística para E-commerce</title>
+<title>NexMove Express | Logística Inteligente</title>
 
 <style>
 
@@ -34,13 +34,13 @@ z-index:100;
 .logo{
 display:flex;
 align-items:center;
-gap:15px;
-font-size:20px;
+gap:20px;
+font-size:22px;
 font-weight:bold;
 }
 
 .logo img{
-height:60px;
+height:85px;
 }
 
 nav a{
@@ -57,31 +57,32 @@ color:#00ff9d;
 /* HERO */
 
 .hero{
-padding:140px 30px;
+padding:150px 30px;
 text-align:center;
 background:linear-gradient(120deg,#071425,#0b1f36);
 }
 
 .hero h1{
-font-size:52px;
+font-size:56px;
 margin-bottom:20px;
 }
 
 .hero p{
 font-size:20px;
-max-width:650px;
+max-width:700px;
 margin:auto;
 }
 
 .btn{
-margin-top:35px;
+margin-top:40px;
 display:inline-block;
 background:#00ff9d;
 color:black;
-padding:16px 34px;
+padding:18px 36px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
+font-size:18px;
 }
 
 .btn:hover{
@@ -91,40 +92,72 @@ background:#00d482;
 /* SERVICES */
 
 .services{
-padding:90px 30px;
+padding:100px 30px;
 background:#0f2b4c;
 text-align:center;
 }
 
 .services h2{
-font-size:36px;
+font-size:38px;
 margin-bottom:50px;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:35px;
 max-width:1100px;
 margin:auto;
 }
 
 .card{
 background:#0b1f36;
-padding:35px;
+padding:40px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* PROCESS */
+
+.process{
+padding:100px 30px;
+text-align:center;
+}
+
+.process h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.steps{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+max-width:1000px;
+margin:auto;
+}
+
+.step{
+background:#071425;
+padding:30px;
 border-radius:10px;
 }
 
 /* DIFFERENTIALS */
 
 .differentials{
-padding:90px 30px;
+padding:100px 30px;
+background:#0f2b4c;
 text-align:center;
 }
 
 .differentials h2{
 font-size:36px;
-margin-bottom:30px;
+margin-bottom:40px;
 }
 
 .list{
@@ -138,8 +171,7 @@ text-align:left;
 /* TECHNOLOGY */
 
 .tech{
-padding:90px 30px;
-background:#0f2b4c;
+padding:100px 30px;
 text-align:center;
 }
 
@@ -149,7 +181,7 @@ margin-bottom:20px;
 }
 
 .tech p{
-max-width:700px;
+max-width:750px;
 margin:auto;
 font-size:18px;
 line-height:1.8;
@@ -158,7 +190,8 @@ line-height:1.8;
 /* COVERAGE */
 
 .coverage{
-padding:90px 30px;
+padding:100px 30px;
+background:#0f2b4c;
 text-align:center;
 }
 
@@ -167,15 +200,10 @@ font-size:36px;
 margin-bottom:20px;
 }
 
-.coverage p{
-font-size:18px;
-}
-
 /* CONTACT */
 
 .contact{
-padding:90px 30px;
-background:#0f2b4c;
+padding:100px 30px;
 text-align:center;
 }
 
@@ -187,24 +215,27 @@ margin-top:20px;
 /* FOOTER */
 
 footer{
-padding:20px;
+padding:25px;
 text-align:center;
 background:#071425;
+margin-top:50px;
 }
 
 /* WHATSAPP FLOAT */
 
 .whatsapp-float{
+
 position:fixed;
 bottom:25px;
 right:25px;
 background:#25D366;
 color:white;
-font-size:26px;
-padding:16px 18px;
+font-size:28px;
+padding:18px 20px;
 border-radius:50%;
 text-decoration:none;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+
 }
 
 .whatsapp-float:hover{
@@ -229,7 +260,7 @@ background:#1ebe5d;
 
 <nav>
 
-<a href="#servicos">Serviços</a> <a href="#tecnologia">Tecnologia</a> <a href="#cobertura">Cobertura</a> <a href="#contato">Contato</a>
+<a href="#servicos">Serviços</a> <a href="#processo">Processo</a> <a href="#tecnologia">Tecnologia</a> <a href="#contato">Contato</a>
 
 </nav>
 
@@ -237,12 +268,12 @@ background:#1ebe5d;
 
 <section class="hero">
 
-<h1>Entregas Expressas para E-commerce</h1>
+<h1>Logística Inteligente para E-commerce</h1>
 
 <p>
 
-Logística inteligente para operações de entrega em São Paulo.
-Especialistas em Last Mile para e-commerce.
+A NexMove entrega velocidade, tecnologia e eficiência
+para operações logísticas de alto desempenho.
 
 </p>
 
@@ -250,7 +281,7 @@ Especialistas em Last Mile para e-commerce.
 href="https://wa.me/5511966925534"
 target="_blank">
 
-Solicitar Cotação
+Solicitar Cotação no WhatsApp
 
 </a>
 
@@ -263,51 +294,53 @@ Solicitar Cotação
 <div class="grid">
 
 <div class="card">
-
 <h3>Same Day</h3>
-
-<p>
-
-Entregas no mesmo dia para operações urgentes de e-commerce.
-
-</p>
-
+<p>Entregas no mesmo dia para operações urgentes.</p>
 </div>
 
 <div class="card">
-
 <h3>Next Day</h3>
-
-<p>
-
-Entrega no dia seguinte com alto nível de SLA.
-
-</p>
-
+<p>Entrega no dia seguinte com alto SLA.</p>
 </div>
 
 <div class="card">
-
 <h3>Last Mile</h3>
-
-<p>
-
-Distribuição final para lojas virtuais e marketplaces.
-
-</p>
-
+<p>Distribuição final para e-commerce.</p>
 </div>
 
 <div class="card">
-
 <h3>Logística Reversa</h3>
+<p>Coleta eficiente de devoluções.</p>
+</div>
 
-<p>
+</div>
 
-Coleta inteligente de devoluções e trocas.
+</section>
 
-</p>
+<section id="processo" class="process">
 
+<h2>Como Funciona</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1️⃣ Coleta</h3>
+<p>Retiramos o pedido no seu estoque.</p>
+</div>
+
+<div class="step">
+<h3>2️⃣ Roteirização</h3>
+<p>Otimização de rotas inteligentes.</p>
+</div>
+
+<div class="step">
+<h3>3️⃣ Entrega</h3>
+<p>Entrega rápida ao cliente final.</p>
+</div>
+
+<div class="step">
+<h3>4️⃣ Confirmação</h3>
+<p>Atualização de status em tempo real.</p>
 </div>
 
 </div>
@@ -320,11 +353,11 @@ Coleta inteligente de devoluções e trocas.
 
 <div class="list">
 
-✔ Operação especializada em e-commerce
+✔ Especialistas em e-commerce
 ✔ Entregas rápidas em São Paulo
+✔ Operação focada em Last Mile
 ✔ Monitoramento logístico
 ✔ Atendimento dedicado para empresas
-✔ Integração com plataformas digitais
 
 </div>
 
@@ -336,24 +369,8 @@ Coleta inteligente de devoluções e trocas.
 
 <p>
 
-A NexMove utiliza tecnologia para otimizar rotas,
-acompanhar entregas em tempo real
-e garantir alta performance operacional
-para operações de e-commerce.
-
-</p>
-
-</section>
-
-<section id="cobertura" class="coverage">
-
-<h2>Área de Cobertura</h2>
-
-<p>
-
-📍 São Paulo Capital
-📍 Grande São Paulo
-📍 Expansão Sudeste
+Utilizamos tecnologia para otimizar rotas,
+acompanhar entregas e garantir eficiência operacional.
 
 </p>
 
@@ -368,7 +385,6 @@ para operações de e-commerce.
 <div>
 
 <h3>Sidnaldo Corte</h3>
-
 <p>Operações e Coletas</p>
 
 <img src="qr_sid.png" class="qr">
@@ -378,7 +394,6 @@ para operações de e-commerce.
 <div>
 
 <h3>Rodolfo</h3>
-
 <p>Novos Clientes e Parcerias</p>
 
 <img src="qr_rodolfo.png" class="qr">
