@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 
 <head>
@@ -6,13 +7,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NexMove Express</title>
+<title>NexMove Express | Logística para E-commerce</title>
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#0b1f36;
 color:white;
 }
@@ -23,41 +24,40 @@ header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 50px;
+padding:20px 60px;
 background:#071425;
+position:sticky;
+top:0;
+z-index:100;
 }
 
 .logo{
 display:flex;
 align-items:center;
 gap:15px;
+font-size:20px;
+font-weight:bold;
 }
 
 .logo img{
-height:55px;
+height:60px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:25px;
+margin-left:30px;
 font-weight:bold;
 }
 
-.whatsapp{
-background:#00ff9d;
-color:black;
-padding:10px 18px;
-border-radius:6px;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+nav a:hover{
+color:#00ff9d;
 }
 
 /* HERO */
 
 .hero{
-padding:140px 40px;
+padding:140px 30px;
 text-align:center;
 background:linear-gradient(120deg,#071425,#0b1f36);
 }
@@ -74,20 +74,24 @@ margin:auto;
 }
 
 .btn{
-margin-top:30px;
+margin-top:35px;
 display:inline-block;
 background:#00ff9d;
 color:black;
-padding:16px 32px;
+padding:16px 34px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
 }
 
+.btn:hover{
+background:#00d482;
+}
+
 /* SERVICES */
 
 .services{
-padding:80px 40px;
+padding:90px 30px;
 background:#0f2b4c;
 text-align:center;
 }
@@ -99,8 +103,10 @@ margin-bottom:50px;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
+max-width:1100px;
+margin:auto;
 }
 
 .card{
@@ -112,53 +118,53 @@ border-radius:10px;
 /* DIFFERENTIALS */
 
 .differentials{
-padding:80px 40px;
+padding:90px 30px;
 text-align:center;
 }
 
 .differentials h2{
 font-size:36px;
-margin-bottom:40px;
+margin-bottom:30px;
 }
 
 .list{
 max-width:800px;
 margin:auto;
-text-align:left;
 font-size:18px;
-line-height:1.8;
+line-height:2;
+text-align:left;
 }
 
 /* TECHNOLOGY */
 
 .tech{
-padding:80px 40px;
+padding:90px 30px;
 background:#0f2b4c;
 text-align:center;
 }
 
 .tech h2{
 font-size:36px;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .tech p{
 max-width:700px;
 margin:auto;
 font-size:18px;
-line-height:1.7;
+line-height:1.8;
 }
 
 /* COVERAGE */
 
 .coverage{
-padding:80px 40px;
+padding:90px 30px;
 text-align:center;
 }
 
 .coverage h2{
 font-size:36px;
-margin-bottom:30px;
+margin-bottom:20px;
 }
 
 .coverage p{
@@ -168,7 +174,7 @@ font-size:18px;
 /* CONTACT */
 
 .contact{
-padding:80px 40px;
+padding:90px 30px;
 background:#0f2b4c;
 text-align:center;
 }
@@ -186,6 +192,25 @@ text-align:center;
 background:#071425;
 }
 
+/* WHATSAPP FLOAT */
+
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+font-size:26px;
+padding:16px 18px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.whatsapp-float:hover{
+background:#1ebe5d;
+}
+
 </style>
 
 </head>
@@ -196,26 +221,15 @@ background:#071425;
 
 <div class="logo">
 
-<img src="logo_novo.png">
+<img src="logo.png (2).png">
 
-<strong>NexMove Express</strong>
+<span>NexMove Express</span>
 
 </div>
 
 <nav>
 
-<a href="#servicos">Serviços</a>
-<a href="#tecnologia">Tecnologia</a>
-<a href="#cobertura">Cobertura</a>
-<a href="#contato">Contato</a>
-
-<a class="whatsapp"
-href="https://wa.me/5511999999999"
-target="_blank">
-
-WhatsApp
-
-</a>
+<a href="#servicos">Serviços</a> <a href="#tecnologia">Tecnologia</a> <a href="#cobertura">Cobertura</a> <a href="#contato">Contato</a>
 
 </nav>
 
@@ -226,10 +240,15 @@ WhatsApp
 <h1>Entregas Expressas para E-commerce</h1>
 
 <p>
-Logística inteligente e tecnologia para operações de entrega na capital paulista.
+
+Logística inteligente para operações de entrega em São Paulo.
+Especialistas em Last Mile para e-commerce.
+
 </p>
 
-<a class="btn" href="#contato">
+<a class="btn"
+href="https://wa.me/5511966925534"
+target="_blank">
 
 Solicitar Cotação
 
@@ -244,23 +263,51 @@ Solicitar Cotação
 <div class="grid">
 
 <div class="card">
+
 <h3>Same Day</h3>
-<p>Entregas no mesmo dia para operações urgentes.</p>
+
+<p>
+
+Entregas no mesmo dia para operações urgentes de e-commerce.
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Next Day</h3>
-<p>Entrega no dia seguinte com alto nível de SLA.</p>
+
+<p>
+
+Entrega no dia seguinte com alto nível de SLA.
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Last Mile</h3>
-<p>Distribuição final para e-commerce.</p>
+
+<p>
+
+Distribuição final para lojas virtuais e marketplaces.
+
+</p>
+
 </div>
 
 <div class="card">
+
 <h3>Logística Reversa</h3>
-<p>Coleta inteligente de devoluções.</p>
+
+<p>
+
+Coleta inteligente de devoluções e trocas.
+
+</p>
+
 </div>
 
 </div>
@@ -273,11 +320,11 @@ Solicitar Cotação
 
 <div class="list">
 
-✔ Entregas expressas em São Paulo  
-✔ Operação focada em e-commerce  
-✔ Monitoramento logístico em tempo real  
-✔ Atendimento dedicado para operações críticas  
-✔ Logística reversa otimizada  
+✔ Operação especializada em e-commerce
+✔ Entregas rápidas em São Paulo
+✔ Monitoramento logístico
+✔ Atendimento dedicado para empresas
+✔ Integração com plataformas digitais
 
 </div>
 
@@ -285,12 +332,14 @@ Solicitar Cotação
 
 <section id="tecnologia" class="tech">
 
-<h2>Plataforma Tecnológica</h2>
+<h2>Tecnologia Logística</h2>
 
 <p>
 
-A NexMove utiliza tecnologia para otimizar rotas, acompanhar entregas em tempo real e
-integrar operações com plataformas de e-commerce e sistemas logísticos.
+A NexMove utiliza tecnologia para otimizar rotas,
+acompanhar entregas em tempo real
+e garantir alta performance operacional
+para operações de e-commerce.
 
 </p>
 
@@ -302,9 +351,9 @@ integrar operações com plataformas de e-commerce e sistemas logísticos.
 
 <p>
 
-📍 São Paulo Capital  
-📍 Grande São Paulo  
-📍 Expansão Sudeste  
+📍 São Paulo Capital
+📍 Grande São Paulo
+📍 Expansão Sudeste
 
 </p>
 
@@ -322,7 +371,7 @@ integrar operações com plataformas de e-commerce e sistemas logísticos.
 
 <p>Operações e Coletas</p>
 
-<img src="qr_sidnaldo.png" class="qr">
+<img src="qr_sid.png" class="qr">
 
 </div>
 
@@ -345,6 +394,14 @@ integrar operações com plataformas de e-commerce e sistemas logísticos.
 © NexMove Express
 
 </footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/5511966925534"
+target="_blank">
+
+💬
+
+</a>
 
 </body>
 
