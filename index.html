@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
 <meta charset="UTF-8">
@@ -22,24 +23,24 @@ header{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 40px;
+padding:20px 50px;
 background:#071425;
 }
 
-.logo-area{
+.logo{
 display:flex;
 align-items:center;
 gap:15px;
 }
 
-.logo-area img{
-height:50px;
+.logo img{
+height:55px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:25px;
 font-weight:bold;
 }
 
@@ -56,19 +57,19 @@ font-weight:bold;
 /* HERO */
 
 .hero{
-padding:120px 40px;
+padding:140px 40px;
 text-align:center;
 background:linear-gradient(120deg,#071425,#0b1f36);
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
 margin-bottom:20px;
 }
 
 .hero p{
 font-size:20px;
-max-width:600px;
+max-width:650px;
 margin:auto;
 }
 
@@ -77,7 +78,7 @@ margin-top:30px;
 display:inline-block;
 background:#00ff9d;
 color:black;
-padding:15px 30px;
+padding:16px 32px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
@@ -98,20 +99,77 @@ margin-bottom:50px;
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:30px;
 }
 
 .card{
 background:#0b1f36;
-padding:30px;
+padding:35px;
 border-radius:10px;
+}
+
+/* DIFFERENTIALS */
+
+.differentials{
+padding:80px 40px;
+text-align:center;
+}
+
+.differentials h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.list{
+max-width:800px;
+margin:auto;
+text-align:left;
+font-size:18px;
+line-height:1.8;
+}
+
+/* TECHNOLOGY */
+
+.tech{
+padding:80px 40px;
+background:#0f2b4c;
+text-align:center;
+}
+
+.tech h2{
+font-size:36px;
+margin-bottom:30px;
+}
+
+.tech p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+}
+
+/* COVERAGE */
+
+.coverage{
+padding:80px 40px;
+text-align:center;
+}
+
+.coverage h2{
+font-size:36px;
+margin-bottom:30px;
+}
+
+.coverage p{
+font-size:18px;
 }
 
 /* CONTACT */
 
 .contact{
 padding:80px 40px;
+background:#0f2b4c;
 text-align:center;
 }
 
@@ -136,9 +194,9 @@ background:#071425;
 
 <header>
 
-<div class="logo-area">
+<div class="logo">
 
-<img src="logo.png">
+<img src="logo_novo.png">
 
 <strong>NexMove Express</strong>
 
@@ -146,13 +204,16 @@ background:#071425;
 
 <nav>
 
-<a href="#">Serviços</a>
-<a href="#">Tecnologia</a>
+<a href="#servicos">Serviços</a>
+<a href="#tecnologia">Tecnologia</a>
+<a href="#cobertura">Cobertura</a>
 <a href="#contato">Contato</a>
 
-<a class="whatsapp" href="https://wa.me/5511999999999" target="_blank">
+<a class="whatsapp"
+href="https://wa.me/5511999999999"
+target="_blank">
 
-Fale no WhatsApp
+WhatsApp
 
 </a>
 
@@ -165,9 +226,7 @@ Fale no WhatsApp
 <h1>Entregas Expressas para E-commerce</h1>
 
 <p>
-
-Logística inteligente para empresas que vendem online em São Paulo.
-
+Logística inteligente e tecnologia para operações de entrega na capital paulista.
 </p>
 
 <a class="btn" href="#contato">
@@ -178,51 +237,82 @@ Solicitar Cotação
 
 </section>
 
-<section class="services">
+<section id="servicos" class="services">
 
 <h2>Nossos Serviços</h2>
 
 <div class="grid">
 
 <div class="card">
-
 <h3>Same Day</h3>
-
-<p>Entrega no mesmo dia.</p>
-
+<p>Entregas no mesmo dia para operações urgentes.</p>
 </div>
 
 <div class="card">
-
 <h3>Next Day</h3>
-
-<p>Entrega no dia seguinte.</p>
-
+<p>Entrega no dia seguinte com alto nível de SLA.</p>
 </div>
 
 <div class="card">
-
 <h3>Last Mile</h3>
-
-<p>Entrega final para e-commerce.</p>
-
+<p>Distribuição final para e-commerce.</p>
 </div>
 
 <div class="card">
-
 <h3>Logística Reversa</h3>
-
-<p>Coleta de devoluções.</p>
-
+<p>Coleta inteligente de devoluções.</p>
 </div>
 
 </div>
 
 </section>
 
+<section class="differentials">
+
+<h2>Diferenciais NexMove</h2>
+
+<div class="list">
+
+✔ Entregas expressas em São Paulo  
+✔ Operação focada em e-commerce  
+✔ Monitoramento logístico em tempo real  
+✔ Atendimento dedicado para operações críticas  
+✔ Logística reversa otimizada  
+
+</div>
+
+</section>
+
+<section id="tecnologia" class="tech">
+
+<h2>Plataforma Tecnológica</h2>
+
+<p>
+
+A NexMove utiliza tecnologia para otimizar rotas, acompanhar entregas em tempo real e
+integrar operações com plataformas de e-commerce e sistemas logísticos.
+
+</p>
+
+</section>
+
+<section id="cobertura" class="coverage">
+
+<h2>Área de Cobertura</h2>
+
+<p>
+
+📍 São Paulo Capital  
+📍 Grande São Paulo  
+📍 Expansão Sudeste  
+
+</p>
+
+</section>
+
 <section id="contato" class="contact">
 
-<h2>Contato</h2>
+<h2>Contato Comercial</h2>
 
 <div class="grid">
 
@@ -257,4 +347,5 @@ Solicitar Cotação
 </footer>
 
 </body>
+
 </html>
