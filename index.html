@@ -50,14 +50,24 @@ font-weight:bold;
 /* HERO */
 
 .hero{
+
 padding:150px 30px;
 text-align:center;
-background:linear-gradient(120deg,#071425,#0b1f36);
+
+background:
+linear-gradient(rgba(7,20,37,0.85),rgba(11,31,54,0.9)),
+url('entregador.logo.png');
+
+background-size:cover;
+background-position:center;
+
 }
 
 .hero h1{
 font-size:54px;
 }
+
+/* BUTTON */
 
 .btn{
 margin-top:30px;
@@ -131,8 +141,6 @@ border:none;
 border-radius:6px;
 }
 
-/* BUTTON */
-
 button{
 background:#00ff9d;
 border:none;
@@ -145,7 +153,6 @@ cursor:pointer;
 /* WHATSAPP FLOAT */
 
 .whatsapp-float{
-
 position:fixed;
 bottom:25px;
 right:25px;
@@ -157,7 +164,6 @@ align-items:center;
 justify-content:center;
 border-radius:50%;
 box-shadow:0 4px 10px rgba(0,0,0,0.4);
-
 }
 
 .whatsapp-float img{
@@ -177,6 +183,28 @@ margin-top:40px;
 background:#081a2c;
 padding:20px;
 border-radius:8px;
+}
+
+/* INTEGRACOES */
+
+.integracao{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.integracao img{
+height:40px;
+}
+
+/* TEXTO LONGO */
+
+.texto{
+max-width:1000px;
+margin:auto;
+text-align:left;
+line-height:1.7;
 }
 
 footer{
@@ -202,6 +230,7 @@ text-align:center;
 <a href="#servicos">Serviços</a>
 <a href="#rastreamento">Rastreamento</a>
 <a href="#tecnologia">Tecnologia</a>
+<a href="#quemSomos">Quem Somos</a>
 </nav>
 
 </header>
@@ -210,7 +239,9 @@ text-align:center;
 
 <h1>Plataforma Logística para E-commerce</h1>
 
-<p>Entregas rápidas e tecnologia para operações logísticas.</p>
+<p>
+Entregas rápidas e tecnologia para operações logísticas.
+</p>
 
 <a class="btn"
 href="https://wa.me/5511966925534"
@@ -230,42 +261,27 @@ Falar no WhatsApp
 
 <div class="card">
 <h3>🛫 Aéreo</h3>
-<p>
-Transporte aéreo para operações urgentes e entregas
-com necessidade de alta velocidade entre centros logísticos.
-</p>
+<p>Transporte aéreo para operações urgentes e entregas de alta velocidade.</p>
 </div>
 
 <div class="card">
 <h3>🚛 Rodoviário</h3>
-<p>
-Distribuição rodoviária para movimentação de cargas
-com eficiência operacional e cobertura regional.
-</p>
+<p>Distribuição rodoviária eficiente para movimentação logística regional.</p>
 </div>
 
 <div class="card">
 <h3>📦 Dedicado Spot</h3>
-<p>
-Operações dedicadas para demandas específicas
-de clientes com rotas ou volumes personalizados.
-</p>
+<p>Operações dedicadas para demandas específicas.</p>
 </div>
 
 <div class="card">
 <h3>⚡ Super Expresso</h3>
-<p>
-Operações Same-Day e Next-Day com alta prioridade
-para entregas urgentes de e-commerce.
-</p>
+<p>Same-Day e Next-Day para entregas urgentes.</p>
 </div>
 
 <div class="card">
 <h3>📦 Standard</h3>
-<p>
-Distribuição padrão com equilíbrio entre custo
-e prazo para operações logísticas recorrentes.
-</p>
+<p>Distribuição padrão com equilíbrio entre prazo e custo.</p>
 </div>
 
 </div>
@@ -280,11 +296,7 @@ e prazo para operações logísticas recorrentes.
 
 <input id="codigo" placeholder="Código de rastreio">
 
-<button onclick="rastrear()">
-
-Rastrear Pedido
-
-</button>
+<button onclick="rastrear()">Rastrear Pedido</button>
 
 </div>
 
@@ -308,16 +320,10 @@ Rastrear Pedido
 <div class="form">
 
 <input id="cepOrigem" placeholder="CEP Origem">
-
 <input id="cepDestino" placeholder="CEP Destino">
-
 <input id="peso" placeholder="Peso (kg)">
 
-<button onclick="frete()">
-
-Calcular Frete
-
-</button>
+<button onclick="frete()">Calcular Frete</button>
 
 </div>
 
@@ -349,44 +355,90 @@ src="https://www.google.com/maps?q=sao%20paulo&output=embed">
 
 <div class="grid">
 
-<div class="card">VTEX</div>
+<div class="integracao">
+<img src="vtex.PNG">
+<p>VTEX</p>
+</div>
 
-<div class="card">Shopify</div>
+<div class="integracao">
+<img src="shopfy.logo.pgn">
+<p>Shopify</p>
+</div>
 
-<div class="card">Tiny ERP</div>
+<div class="integracao">
+<img src="tiny.pgn">
+<p>Tiny ERP</p>
+</div>
 
-<div class="card">Bling</div>
+<div class="integracao">
+<img src="bling.logo.pgn">
+<p>Bling</p>
+</div>
 
-<div class="card">API Logística</div>
+<div class="integracao">
+<img src="API.logo.pgn">
+<p>API Logística</p>
+</div>
 
 </div>
 
 </section>
 
-<section class="section section-dark">
+<section id="quemSomos" class="section section-dark">
 
-<h2>Para E-commerce</h2>
+<h2>Quem Somos</h2>
+
+<div class="texto">
+
+<h3>NexMove Express</h3>
+
+<p><b>Logística inteligente para um mercado em constante movimento</b></p>
 
 <p>
-Integramos operações logísticas com plataformas digitais.
+A NexMove Express nasce com um propósito claro: transformar a logística em uma operação mais eficiente, tecnológica e confiável para empresas que precisam entregar com velocidade e previsibilidade.
 </p>
 
-<a class="btn"
-href="https://wa.me/5511966925534"
-target="_blank">
+<p>
+Sediada em Carapicuíba – SP, em uma localização estratégica próxima ao Rodoanel Mário Covas e à Rodovia Castelo Branco.
+</p>
 
-Quero integrar minha loja
+<h3>Estrutura Operacional</h3>
 
-</a>
+<ul>
+<li>Frota própria e mais de 30 veículos agregados</li>
+<li>Motoristas qualificados</li>
+<li>Operação estratégica na Grande São Paulo</li>
+<li>Capacidade de expansão</li>
+<li>Controle e rastreabilidade logística</li>
+</ul>
+
+<h3>Missão</h3>
+<p>Oferecer soluções logísticas inteligentes com agilidade, segurança e eficiência.</p>
+
+<h3>Visão</h3>
+<p>Ser referência em logística inteligente e distribuição urbana.</p>
+
+<h3>Valores</h3>
+
+<ul>
+<li>Tecnologia aplicada à logística</li>
+<li>Eficiência operacional</li>
+<li>Confiança e parceria</li>
+<li>Qualidade em cada entrega</li>
+<li>Evolução constante</li>
+</ul>
+
+<p><b>NexMove Express</b><br>
+Conectando tecnologia, logística e eficiência para mover o seu negócio.</p>
+
+</div>
 
 </section>
 
 <footer>
 
 <p>© NexMove Express</p>
-
 <p>Base Matriz</p>
-
 <p>Carapicuíba / SP</p>
 
 </footer>
@@ -408,7 +460,6 @@ let peso=document.getElementById("peso").value;
 let valor=12+(peso*2)+5;
 
 document.getElementById("valor").innerHTML=
-
 "Frete estimado: R$ "+valor+" | Prazo estimado: 1-2 dias";
 
 }
@@ -418,7 +469,6 @@ function rastrear(){
 let codigo=document.getElementById("codigo").value;
 
 document.getElementById("status").innerHTML=
-
 "Status do pedido "+codigo+": Em transporte";
 
 }
@@ -426,5 +476,4 @@ document.getElementById("status").innerHTML=
 </script>
 
 </body>
-
 </html>
