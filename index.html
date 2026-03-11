@@ -59,6 +59,8 @@ background:linear-gradient(120deg,#071425,#0b1f36);
 font-size:54px;
 }
 
+/* BUTTON */
+
 .btn{
 margin-top:30px;
 display:inline-block;
@@ -131,6 +133,8 @@ border:none;
 border-radius:6px;
 }
 
+/* BUTTON */
+
 button{
 background:#00ff9d;
 border:none;
@@ -140,18 +144,26 @@ font-weight:bold;
 cursor:pointer;
 }
 
-/* WHATSAPP */
+/* WHATSAPP FLOAT */
 
 .whatsapp-float{
+
 position:fixed;
 bottom:25px;
 right:25px;
 background:#25D366;
-color:white;
-font-size:30px;
-padding:18px 22px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
 border-radius:50%;
-text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+
+}
+
+.whatsapp-float img{
+width:34px;
 }
 
 /* STATUS */
@@ -277,6 +289,10 @@ Rastrear Pedido
 
 <div class="form">
 
+<input id="cepOrigem" placeholder="CEP Origem">
+
+<input id="cepDestino" placeholder="CEP Destino">
+
 <input id="peso" placeholder="Peso (kg)">
 
 <button onclick="frete()">
@@ -315,25 +331,15 @@ src="https://www.google.com/maps?q=sao%20paulo&output=embed">
 
 <div class="grid">
 
-<div class="card">
-VTEX
-</div>
+<div class="card">VTEX</div>
 
-<div class="card">
-Shopify
-</div>
+<div class="card">Shopify</div>
 
-<div class="card">
-Tiny ERP
-</div>
+<div class="card">Tiny ERP</div>
 
-<div class="card">
-Bling
-</div>
+<div class="card">Bling</div>
 
-<div class="card">
-API Logística
-</div>
+<div class="card">API Logística</div>
 
 </div>
 
@@ -344,9 +350,7 @@ API Logística
 <h2>Para E-commerce</h2>
 
 <p>
-
 Integramos operações logísticas com plataformas digitais.
-
 </p>
 
 <a class="btn"
@@ -373,7 +377,7 @@ Quero integrar minha loja
 href="https://wa.me/5511966925534"
 target="_blank">
 
-💬
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 
 </a>
 
@@ -386,7 +390,8 @@ let peso=document.getElementById("peso").value;
 let valor=12+(peso*2)+5;
 
 document.getElementById("valor").innerHTML=
-"Frete estimado: R$ "+valor;
+
+"Frete estimado: R$ "+valor+" | Prazo estimado: 1-2 dias";
 
 }
 
@@ -395,6 +400,7 @@ function rastrear(){
 let codigo=document.getElementById("codigo").value;
 
 document.getElementById("status").innerHTML=
+
 "Status do pedido "+codigo+": Em transporte";
 
 }
